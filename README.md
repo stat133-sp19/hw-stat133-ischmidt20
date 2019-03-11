@@ -2,10 +2,10 @@
 
 Private Repository for HW assignments of Stat 133 (Spring 2019)
 
-- Name: Your name (first last)
-- Github username: usrname
-- Email: address [at] email.com
-- Lab section: 101
+- Name: Isaac Schmidt
+- Github username: ischmidt20
+- Email: ischmidt20@berkeley.edu
+- Lab section: 111
 - GSI: Leia Organa
 
 -----
