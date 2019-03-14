@@ -6,7 +6,7 @@ Private Repository for HW assignments of Stat 133 (Spring 2019)
 - Github username: ischmidt20
 - Email: ischmidt20@berkeley.edu
 - Lab section: 111
-- GSI: Leia Organa
+- GSI: Yulun Wu
 
 -----
 
