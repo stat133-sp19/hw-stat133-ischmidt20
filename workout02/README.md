@@ -39,3 +39,5 @@ If the user has selected "Yes" facet, then each type of contribution will be dis
 ### Balances
 
 This selection displays the raw data that is displayed in the above plot. The user may find this useful for importing into other software to do additional calculations or something similar.
+
+Finally, there is another file in this directory named `scripts.R`. This file contains the code directly copied from the Warmup 6 assignment. What is of note here are the defined functions that calculate account balance given the above parameters. These functions are then loaded into `app.R` in order for the app to function properly.
