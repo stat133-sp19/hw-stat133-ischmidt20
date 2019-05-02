@@ -1,0 +1,17 @@
+Package: binomial
+Title: Binomial Distribution
+Version: 0.0.0.9000
+Authors@R: 
+    person(given = "Isaac",
+           family = "Schmidt",
+           role = c("aut", "cre"),
+           email = "ischmidt20@berkeley.edu")
+Description: Provides functions that work with the binomial distribution, including calculating probabilities, statistics such as mean and variance, and plotting.
+License: GPL-3
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 6.1.1
+Suggests: 
+    knitr,
+    rmarkdown
+VignetteBuilder: knitr

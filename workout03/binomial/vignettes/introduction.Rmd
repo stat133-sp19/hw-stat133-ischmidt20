@@ -1,0 +1,81 @@
+---
+title: "Getting started with binomial"
+author: "Isaac Schmidt"
+date: "`r Sys.Date()`"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{vignette}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+```
+
+```{r setup}
+library(binomial)
+```
+
+## Statistics of the Binomial Distribution
+
+```{r}
+my_bin = bin_variable(trials=7,prob=.25)
+my_bin
+```
+
+The function `bin_variable` takes two arguments, `trials` and `prob`, and returns an instance of a binomial random variable. The most useful thing to do with a binomial random variable is to see its summary statistics, such as mean and variance.
+
+```{r}
+summary(my_bin)
+```
+
+Alternatively, you can calculate a certain statistic directly.
+
+```{r}
+bin_variance(trials=7,prob=.25)
+```
+
+## Probabilities
+
+To get the probability that a binomial random variable with parameters n and p equals k, use `bin_probability`.
+
+```{r}
+bin_probability(success=3,trials=10,prob=1/3)
+```
+
+You can pass in multiple values to `success` as a vector.
+
+```{r}
+bin_probability(success=1:3,trials=5,prob=0.5)
+```
+
+To get all probabilities for a certain `trials` and `prob`, use `bin_distribution`.
+
+```{r}
+my_bindis = bin_distribution(trials=7,prob=.25)
+my_bindis
+```
+
+To see the cumulative distribution, use `bin_cumulative`.
+
+```{r}
+my_bincum = bin_cumulative(trials=7,prob=.25)
+my_bincum
+```
+
+## Plotting
+
+You can easily plot both the binomial distribution and binomial cumulative distribution.
+
+```{r,fig.show='hold'}
+plot(my_bindis)
+```
+
+```{r, fig.show='hold'}
+plot(my_bincum)
+```
+
