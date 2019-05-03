@@ -8,7 +8,7 @@ This homework involves creating a basic R package that works with the binomial d
 
 ### Installation
 
-You can install using the `devtools` package with `devtools::install_github("ischmidt20/workout03/binomial")`.
+You can install using the `devtools` package with `devtools::install_github("devtools::install_github("stat133-sp19/hw-stat133-ischmidt20/workout03/binomial")`.
 
 Alternatively, you can download and install the compressed `binomial_0.0.0.9000.tar.gz` file.
 
